@@ -292,10 +292,11 @@ body {
                                 background: #0096fd;
                                 transition: all ease 0.1s;
                                 cursor: pointer;
+                                font-weight: 600;
 
                                 &:hover {
                                     background: #eee;
-                                    color: #34D1B7;
+                                    color: #0096fd;
                                 }
                             }
                         }
