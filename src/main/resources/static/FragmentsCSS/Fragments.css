@@ -118,7 +118,7 @@ body {
             font-size: 1.2rem;
             font-weight: 500;
             box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
-            transition: all ease 0.3s;  
+            transition: all ease 0.3s;
 
             &:hover {
                 filter: brightness(1.1);
@@ -305,6 +305,59 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    #forms {
+        width: 100%;
+        /* Width Adjust Karlo Appne Hisab se */
+        height: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 15;
+        display: none;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(0.5rem);
+
+        #closeForm {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        #individual-course-form,
+        #full-stack-form,
+        #computer-basic-form {
+            width: 40rem;
+            height: 100%;
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #individual-course-form {
+            background: lightcoral;
+        }
+
+        #full-stack-form {
+            background: lightgreen;
+        }
+
+        #computer-basic-form {
+            background: lightblue;
+        }
+
+        &.active {
+            display: block !important;
+
+            .active {
+                display: block !important;
             }
         }
     }
