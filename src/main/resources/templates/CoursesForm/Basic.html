@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 
 <head>
     <title>Document</title>
@@ -7,26 +7,26 @@
 
 <style>
     .gradient-custom-3 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+        /* fallback for old browsers */
+        background: #84fab0;
+
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
     }
+
     .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+        /* fallback for old browsers */
+        background: #84fab0;
+
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
     }
-    
 </style>
 
 
@@ -44,40 +44,43 @@
                             <div class="card-body p-5">
                                 <h2 class="text-uppercase text-center mb-5">Basic Computer Course <br>Form</h2>
 
-                                <form th:action= "@{/add}" method="get" th:object="${obj}">
+                                <form th:action="@{/add}" method="get" th:object="${obj}">
 
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="text" id="form3Example1cg" class="form-control form-control-lg" placeholder="NAME" th:field="*{name}"/>
+                                        <input type="text" id="form3Example1cg" class="form-control form-control-lg"
+                                            placeholder="NAME" th:field="*{name}" />
                                         <label class="form-label" for="form3Example1cg">Full Name</label>
-                                    </div> 
+                                    </div>
 
                                     <div data-mdb-input-init class="form-outline mb-4">
                                         <!-- <input type="email" id="form3Example3cg" class="form-control form-control-lg" /> -->
-                                        <select name="cars" id="cars"  class="form-control form-control-lg" th:field="*{course}">
+                                        <select name="cars" id="cars" class="form-control form-control-lg"
+                                            th:field="*{course}">
                                             <option value="">Select-Cource</option>
                                             <option value="Basic computer">Basic computer</option>
                                             <option value="Excel Basic">Excel Basic</option>
                                             <option value="Excel Advance">Excel Advance</option>
                                             <option value="Tally">Tally</option>
-                                          </select>
+                                        </select>
 
                                         <label class="form-label" for="form3Example3cg">Coures name</label>
                                     </div>
 
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="date" id="form3Example4cg"
-                                            class="form-control form-control-lg" th:field="*{strating_date}"/>
+                                        <input type="date" id="form3Example4cg" class="form-control form-control-lg"
+                                            th:field="*{strating_date}" />
                                         <label class="form-label" for="form3Example4cg">Starting Date</label>
                                     </div>
 
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="date" class="form-control form-control-lg"th:field="*{ending_date}" />
+                                        <input type="date" class="form-control form-control-lg"
+                                            th:field="*{ending_date}" />
                                         <label class="form-label" for="form3Example4cdg">Ending Date</label>
                                     </div>
 
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="date" id="form3Example4cdg"
-                                            class="form-control form-control-lg" th:field="*{date_of_issue}"/>
+                                        <input type="date" id="form3Example4cdg" class="form-control form-control-lg"
+                                            th:field="*{date_of_issue}" />
                                         <label class="form-label" for="form3Example4cdg">Date of isssue</label>
                                     </div>
 
