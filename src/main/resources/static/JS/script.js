@@ -14,6 +14,19 @@ menu_icon.addEventListener("click", () => {
     web_main.classList.remove("active")
 })
 
+// Services Form
+let forms = document.querySelector("#forms");
+let closeForm = document.querySelector("#closeForm");
+
+let individual_course_form = document.querySelector("#individual-course-form");
+let individual_course_button = document.querySelector("#individual-course-button");
+
+let full_stack_form = document.querySelector("#full-stack-form");
+let full_stack_button = document.querySelector("#full-stack-button");
+
+let computer_basic_form = document.querySelector("#computer-basic-form");
+let computer_basic_button = document.querySelector("#computer-basic-button");
+
 // Function to show a form and hide others
 function showForm(formToShow) {
     // Hide all forms
@@ -29,14 +42,17 @@ function showForm(formToShow) {
 }
 
 individual_course_button.addEventListener("click", () => {
+    console.log("Clicked");
     showForm(individual_course_form);
 });
 
 full_stack_button.addEventListener("click", () => {
+    console.log("Clicked");
     showForm(full_stack_form);
 });
 
 computer_basic_button.addEventListener("click", () => {
+    console.log("Clicked");
     showForm(computer_basic_form);
 });
 
