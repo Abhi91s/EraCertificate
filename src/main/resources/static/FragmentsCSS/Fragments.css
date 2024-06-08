@@ -42,7 +42,7 @@ body {
     }
 
     figure {
-        background: rgb(0, 125, 167);
+        background: #4E6890;
         width: 100%;
         height: 15%;
         display: flex;
@@ -103,7 +103,8 @@ body {
 
     aside {
         padding: 2rem;
-        background: rgb(0, 125, 167);
+        /* background: rgb(0, 125, 167); */
+        background: #4E6890;
 
         button {
             width: 100%;
@@ -111,12 +112,13 @@ body {
             border: none;
             border-radius: 0.5rem;
             cursor: pointer;
-            background: rgb(0, 194, 194);
+            /* background: rgb(0, 194, 194); */
+            background: #0096FD;
             color: white;
             font-size: 1.2rem;
             font-weight: 500;
             box-shadow: 0rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
-            transition: all ease 0.3s;
+            transition: all ease 0.3s;  
 
             &:hover {
                 filter: brightness(1.1);
@@ -137,7 +139,8 @@ body {
     transition: all ease 0.5s;
 
     .menu {
-        color: #34D1B7;
+        /* color: #34D1B7; */
+        color: #35607e;
         font-size: 2rem;
         transition: all ease 0.5s;
         width: fit-content;
@@ -292,10 +295,11 @@ body {
                                 background: #0096fd;
                                 transition: all ease 0.1s;
                                 cursor: pointer;
+                                font-weight: 600;
 
                                 &:hover {
                                     background: #eee;
-                                    color: #34D1B7;
+                                    color: #0096fd;
                                 }
                             }
                         }

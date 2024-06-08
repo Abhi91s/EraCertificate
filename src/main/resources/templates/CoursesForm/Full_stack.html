@@ -42,9 +42,9 @@
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="card" style="border-radius: 15px;">
                             <div class="card-body p-5">
-                                <h2 class="text-uppercase text-center mb-5">Basic Computer Course <br>Form</h2>
+                                <h2 class="text-uppercase text-center mb-5">Full - Stack Course <br>Form</h2>
 
-                                <form th:action= "@{/add_basic}" method="get" th:object="${obj}">
+                                <form th:action= "@{/add_full}" method="get" th:object="${obj}">
 
                                     <div data-mdb-input-init class="form-outline mb-4">
                                         <input type="text" id="form3Example1cg" class="form-control form-control-lg" placeholder="NAME" th:field="*{name}"/>
@@ -54,11 +54,11 @@
                                     <div data-mdb-input-init class="form-outline mb-4">
                                         <!-- <input type="email" id="form3Example3cg" class="form-control form-control-lg" /> -->
                                         <select name="cars" id="cars"  class="form-control form-control-lg" th:field="*{course}">
-                                            <option value="">--Select-Cource</option>
-                                            <option value="Basic computer">Basic computer</option>
-                                            <option value="Excel Basic">Excel Basic</option>
-                                            <option value="Excel Advance">Excel Advance</option>
-                                            <option value="Tally">Tally</option>
+                                            <option value="">Select-Cource</option>
+                                            <option value="MERN Stack"> MERN Stack</option>
+                                            <option value="MEAN Stack"> MEAN Stack</option>
+                                            <option value="Spring Boot">Spring Boot</option>
+                                            <option value="Python Full-Stack">Python Full-Stack</option>
                                           </select>
 
                                         <label class="form-label" for="form3Example3cg">Coures name</label>

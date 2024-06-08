@@ -1,7 +1,8 @@
 package com.example.eracertificate.BasicCertificates;
 
 
-public interface basicrepo  {
+public interface basicrepo  
+{
 
     
 } 

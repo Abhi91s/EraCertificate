@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<html lang="en"  xmlns:th="https://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -13,12 +13,12 @@
     <header id="web-header">
         <i class="close ri-close-large-line"></i>
         <figure>
-            <img th:src="@{/Images/logo.png}" alt="404! Cannot Load Logo">
+            <!-- <img src="./logo.webp" alt="404! Cannot Load Logo"> -->
         </figure>
         <nav>
             <ul type="none">
                 <section>
-                    <h1>Main</h1>
+                    <h1>Main :-</h1>
                     <li>
                         <span>Home</span>
                         <span>Home</span>
@@ -29,7 +29,7 @@
                     </li>
                 </section>
                 <section>
-                    <h1>Services</h1>
+                    <h1>Services :-</h1>
                     <li>
                         <span>Basic Computer</span>
                         <span>Basic Computer</span>
@@ -44,7 +44,7 @@
                     </li>
                 </section>
                 <section>
-                    <h1>How To</h1>
+                    <h1>How To :-</h1>
                     <li>
                         <span>Admin Login</span>
                         <span>Admin Login</span>
@@ -79,7 +79,7 @@
                     <h1>Individual Course</h1>
                     <p>Basic Computer, Excel, Tally, C / C++, Java, Python & more..</p>
 
-                    <a th:href="@{/form}">
+                    <a th:href= "@{/Indi_form}">
                         <h1>Register</h1>
                     </a>
                 </div>
@@ -88,7 +88,7 @@
                     <h1>Full Stack</h1>
                     <p>Java FullStack, MERN Stack, MEAN Stack..</p>
                     <p></p>
-                    <a href="/full-stack">
+                    <a th:href= "@{/Full_form}">
                         <h1>Register</h1>
                     </a>
                 </div>
@@ -96,30 +96,29 @@
                 <div id="basic" class="certificate">
                     <h1>Computer Basics</h1>
                     <p>Computer Basics, Excel Basic, Excel Advance, Tally..</p>
-                    <a href="/computer-basics">
+                    <a th:href= "@{/Basic_form}">
                         <h1>Register</h1>
                     </a>
                 </div>
             </div>
         </section>
         <section id="users">
-            <h1>Student Details</h1>
+            <h1>Users..</h1>
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
+                            <th>Id</th>
                             <th>Name</th>
-                            <th>Period - Dates</th>
-                            <th>Date of Issue</th>
+                            <th>Phone Number</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <!-- Show The Details Of User Who is Currently Loggedin -->
-                            <td>Sarthak</td>
-                            <td>4 May 2021 - to - 5 January 2022</td>
-                            <td>3 May 2021</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>1234567890</td>
                             <td>
                                 <a href="/view">
                                     <button>View</button>
@@ -128,7 +127,9 @@
                                     <button>Download</button>
                                 </a>
                             </td>
+
                         </tr>
+                       
                     </tbody>
                 </table>
             </div>
