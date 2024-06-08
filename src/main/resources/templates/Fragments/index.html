@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/FragmentsCSS/styles.css}">
+    <link th:href="@{https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css}" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="web-header">
+        <i class="close ri-close-large-line"></i>
+        <figure>
+            <!-- <img src="./logo.webp" alt="404! Cannot Load Logo"> -->
+        </figure>
+        <nav>
+            <ul type="none">
+                <section>
+                    <h1>Main :-</h1>
+                    <li>
+                        <span>Home</span>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <span>About</span>
+                        <span>About</span>
+                    </li>
+                </section>
+                <section>
+                    <h1>Services :-</h1>
+                    <li>
+                        <span>Basic Computer</span>
+                        <span>Basic Computer</span>
+                    </li>
+                    <li>
+                        <span>Full Stack</span>
+                        <span>Full Stack</span>
+                    </li>
+                    <li>
+                        <span>Individual Courses</span>
+                        <span>Individual Courses</span>
+                    </li>
+                </section>
+                <section>
+                    <h1>How To :-</h1>
+                    <li>
+                        <span>Admin Login</span>
+                        <span>Admin Login</span>
+                    </li>
+                    <li>
+                        <span>Help</span>
+                        <span>Help</span>
+                    </li>
+                    <li>
+                        <span>Contact Us</span>
+                        <span>Contact Us</span>
+                    </li>
+                </section>
+            </ul>
+        </nav>
+        <aside>
+            <a href="#">
+                <button>
+                    <span>Logout</span>
+                    <i class="ri-logout-box-r-line"></i>
+                </button>
+            </a>
+        </aside>
+    </header>
+    <main id="web-main">
+        <i class="menu ri-menu-2-line"></i>
+        <section id="services">
+            <h1>Course Certificates..</h1>
+
+            <div id="certificates">
+                <div id="individual" class="certificate">
+                    <h1>Individual Course</h1>
+                    <p>Basic Computer, Excel, Tally, C / C++, Java, Python & more..</p>
+
+                    <a th:href= "@{/form}">
+                        <h1>Register</h1>
+                    </a>
+                </div>
+
+                <div id="full-stack" class="certificate">
+                    <h1>Full Stack</h1>
+                    <p>Java FullStack, MERN Stack, MEAN Stack..</p>
+                    <p></p>
+                    <a href="/full-stack">
+                        <h1>Register</h1>
+                    </a>
+                </div>
+
+                <div id="basic" class="certificate">
+                    <h1>Computer Basics</h1>
+                    <p>Computer Basics, Excel Basic, Excel Advance, Tally..</p>
+                    <a href="/computer-basics">
+                        <h1>Register</h1>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="users">
+            <h1>Users..</h1>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Phone Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Sarthak</td>
+                            <td>1234567890</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>0987654321</td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                                <a href="/download">
+                                    <button>Download</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="/JS/script.js"></script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ public class EracertificateApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EracertificateApplication.class, args);
-		
+		System.out.println("\n\nAppliction Started.....");
 	}
 
 }
