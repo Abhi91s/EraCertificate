@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" >
+<head>
+  <title>Full Stack Course Form</title>
+
+
+</head>
+<body class="body" th:fragment= "form">
+  <div class="container" >
+    <h1 class="h1">FULL - STACK COURSE FORM</h1>
+
+    <form class="form"> 
+
+      <label for="name" class="label">NAME</label>
+      <input type="text" id="name" placeholder="Full Name" class="input">
+
+      <label for="course" class="label">Select-Course</label>
+      <select class="input">
+         <option value="">Select-Cource</option>
+         <option value="MERN Stack"> MERN Stack</option>
+         <option value="MEAN Stack"> MEAN Stack</option>
+         <option value="Spring Boot">Spring Boot</option>
+         <option value="Python Full-Stack">Python Full-Stack</option>
+       </select>
+ 
+
+      <label for="start-date" class="label">Starting Date</label>
+      <input type="date" class="input">
+
+      <label for="end-date" class="label">Ending Date</label>
+      <input type="date" class="input">
+
+      <label for="issue-date" class="label">Date of issue</label>
+      <input type="date" class="input">
+
+      <button type="submit" class="button">Register</button>
+    </form>
+
+  </div>
+</body>
+</html>
