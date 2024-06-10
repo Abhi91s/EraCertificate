@@ -132,15 +132,109 @@
                 </table>
             </div>
         </section>
-        <section id="forms">
-            <a href="">
-                <i id="closeForm" class="ri-close-large-line"></i>
-            </a>
-            <div id="individual-course-form" class="form-wrapper"></div>
-            <div id="full-stack-form" class="form-wrapper"></div>
-            <div id="computer-basic-form" class="form-wrapper"></div>
-        </section>
     </main>
+    <section id="forms">
+        <a href="">
+            <i id="closeForm" class="ri-close-large-line"></i>
+        </a>
+        <div id="individual-course-form" class="form-wrapper">
+            <form action="/add_individ">
+                <h1>- Individual Course -</h1>
+                <input type="text" placeholder="Full Name.." />
+
+                <select>
+                    <option value="">Select Course..</option>
+                    <option value="C/C++"> C/C++</option>
+                    <option value="Java"> Java</option>
+                    <option value="Python">Python</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Html/CSS">Html/CSS</option>
+                    <option value="DBMS">Database(DBMS)</option>
+                </select>
+
+                <div class="input-wrap">
+                    <label>Starting Date</label>
+                    <input class="input-date" type="date" />
+                </div>
+
+                <div class="input-wrap">
+                    <label>Ending Date</label>
+                    <input class="input-date" type="date" />
+                </div>
+                <div class="input-wrap">
+                    <label>Date of isssue</label>
+                    <input class="input-date" type="date" />
+                </div>
+
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="full-stack-form" class="form-wrapper">
+            <form action="/add_full">
+                <h1>- Full Stack -</h1>
+
+                <input type="text" placeholder="Full Name.." />
+
+                <select>
+                    <option value="">Select Course..</option>
+                    <option value="MERN Stack"> MERN Stack</option>
+                    <option value="MEAN Stack"> MEAN Stack</option>
+                    <option value="Spring Boot">Spring Boot</option>
+                    <option value="Python Full-Stack">Python Full-Stack</option>
+                </select>
+
+                <div class="input-wrap">
+                    <label>Starting Date</label>
+                    <input class="input-date" type="date" />
+                </div>
+
+                <div class="input-wrap">
+                    <label>Ending Date..</label>
+                    <input class="input-date" type="date" />
+                </div>
+
+                <div class="input-wrap">
+                    <label>Date of isssue</label>
+                    <input class="input-date" type="date" />
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="computer-basic-form" class="form-wrapper">
+            <form action="/add_basic" method="get">
+                <h1>- Computer Basic -</h1>
+                <input type="text" placeholder="Full Name.." required />
+
+                <select required>
+                    <option value="" class="option">Select Course..</option>
+                    <option value="Basic computer">Basic computer</option>
+                    <option value="Excel Basic">Excel Basic</option>
+                    <option value="Excel Advance">Excel Advance</option>
+                    <option value="Tally">Tally</option>
+                </select>
+
+                <div class="input-wrap">
+                    <label>Starting Date..</label>
+                    <input class="input-date" type="date" required />
+                </div>
+
+                <div class="input-wrap">
+                    <label>Ending Date..</label>
+                    <input class="input-date" type="date" required />
+                </div>
+
+                <div class="input-wrap">
+                    <label>Date of isssue</label>
+                    <input class="input-date" type="date" />
+                </div>
+
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
     <script src="/JS/script.js"></script>
 </body>
 

@@ -309,63 +309,147 @@ body {
         }
     }
 
-    #forms {
+}
+
+#forms {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+
+    &::before {
+        content: '';
+        position: absolute;
         width: 100%;
-        /* Width Adjust Karlo Appne Hisab se */
         height: 100%;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 15;
-        display: none;   
         background: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(0.5rem);
+    }
 
-        #closeForm {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            font-size: 2rem;
-            cursor: pointer;
+    #closeForm {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #individual-course-form,
+    #full-stack-form,
+    #computer-basic-form {
+        width: 40rem;
+        height: 100%;
+        display: none;
+        position: absolute;
+        z-index: 30;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2rem;
+        background: #1092e9;
+
+        input::placeholder,
+        label {
+            color: #0078CA;
         }
 
-        #individual-course-form,
-        #full-stack-form,
-        #computer-basic-form {
-            width: 40rem;
-            height: 100%;
-            display: none;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            input-security: auto;
 
-        #individual-course-form {
-            background: lightcoral;
-        }
+            .input-wrap {
+                display: flex;
+                flex-direction: column;
 
-        #full-stack-form {
-            background: lightgreen;
-        }
-
-        #computer-basic-form {
-            background: lightblue;
-        }
-
-        &.active {
-            display: block !important;
-
-            .active {
-                display: block !important;
+                label {
+                    font-size: 1.3rem;
+                    background: #fff;
+                    padding: 1rem 0 0 1rem;
+                    border-radius: 1rem 1rem 0 0;
+                    transform: translateY(0.2rem);
+                    background: #fff;
+                }
             }
+
+            input,
+            select,
+            option {
+                font-size: 1.3rem;
+                width: 30rem;
+                padding: 1rem;
+                color: #000;
+                outline: none;
+                border: none;
+                border-radius: 1rem;
+                overflow: hidden;
+
+                &.input-date {
+                    padding: 0 1rem 1rem 1rem !important;
+                    border-radius: 0 0 1rem 1rem !important;
+                }
+            }
+
+            .submit {
+                width: 15rem;
+                cursor: pointer;
+
+                &:hover {
+                    filter: brightness(0.9);
+                }
+
+                &:active {
+                    filter: brightness(0.95);
+                }
+            }
+        }
+    }
+
+    /* #individual-course-form {
+        background: lightcoral;
+
+        input::placeholder,
+        label {
+            color: lightcoral;
+        }
+    }
+
+    #full-stack-form {
+        background: #1092e9;
+
+        input::placeholder,
+        label {
+            color: #0078CA;
+        }
+    }
+
+    #computer-basic-form {
+        background: lightblue;
+
+        input::placeholder,
+        label {
+            color: lightblue;
+        }
+    } */
+
+    &.active {
+        display: block !important;
+
+        .active {
+            display: block !important;
         }
     }
 }
 
 @media (max-width: 768px) {
     header {
-        width: 100%;
+        width: 100% !important;
 
         nav {
             font-size: 1.5rem;
