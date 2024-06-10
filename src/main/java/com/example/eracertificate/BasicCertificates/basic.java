@@ -9,8 +9,19 @@ public class basic
     private String strating_date;
     private String ending_date;
     private String date_of_issue;
+    private boolean certificate_status;
 
     
+    public boolean isCertificate_status() {
+        return certificate_status;
+    }
+
+
+    public void setCertificate_status(boolean certificate_status) {
+        this.certificate_status = certificate_status;
+    }
+
+
     public basic() 
     {
     }
@@ -50,8 +61,11 @@ public class basic
 
     @Override
     public String toString() {
-        return "Student [name=" + name + ", course=" + course + ", strating_date=" + strating_date + ", ending_date="
-                + ending_date + ", date_of_issue=" + date_of_issue + "]";
+        return "basic [name=" + name + ", course=" + course + ", strating_date=" + strating_date + ", ending_date="
+                + ending_date + ", date_of_issue=" + date_of_issue + ", certificate_status=" + certificate_status + "]";
     }
+
+
+    
 
 }
