@@ -62,8 +62,7 @@ body {
     nav {
         padding: 2rem;
         width: 100%;
-        min-height: calc(85% - 4rem);
-        max-height: fit-content;
+        height: calc(85% - 4rem);
         position: relative;
         background: #35607e;
         display: flex;
