@@ -9,15 +9,14 @@ import com.example.eracertificate.FullstackCertificates.fullstack;
 import com.example.eracertificate.IndividualCertificate.individual;
 
 @Controller
-public class Controler 
-{
+public class Controler {
     @GetMapping("/")
     public String homepage(Model model) 
     {
-        model.addAttribute("individ",new individual());
+        model.addAttribute("individ", new individual());
         model.addAttribute("full_stack", new fullstack());
-        model.addAttribute("Basic",new basic());
-        
+        model.addAttribute("Basic", new basic());
+
         return "/Fragments/index";
     }
 

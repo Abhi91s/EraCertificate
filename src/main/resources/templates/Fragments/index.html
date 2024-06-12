@@ -138,7 +138,7 @@
             <i id="closeForm" class="ri-close-large-line"></i>
         </a>
         <div id="individual-course-form" class="form-wrapper">
-            <form th:action= "@{/add_individ}" method="get" th:object="${individ}">
+            <form th:action= "@{/add_individ}" method="post" th:object="${individ}">
                 <h1>- Individual Course -</h1>
                 <input type="text" placeholder="Full Name.." th:field="*{name}"/>
 
@@ -170,8 +170,8 @@
             </form>
         </div>
 
-        <div id="full-stack-form" class="form-wrapper">
-            <form th:action= "@{/add_fullStack}" method="get" th:object="${full_stack}">
+      <div id="full-stack-form" class="form-wrapper">
+            <form th:action= "@{/add_fullStack}" method="post" th:object="${full_stack}">
                 <h1>- Full Stack -</h1>
 
                 <input type="text" placeholder="Full Name.." th:field="*{name}"/>
@@ -204,7 +204,7 @@
         </div>
 
         <div id="computer-basic-form" class="form-wrapper">
-            <form th:action= "@{/add_basic}" method="get" th:object="${Basic}">
+            <form th:action= "@{/add_basic}" method="post" th:object="${Basic}">
                 <h1>- Computer Basic -</h1>
                 <input type="text" placeholder="Full Name.." th:field="*{name}" required />
 
