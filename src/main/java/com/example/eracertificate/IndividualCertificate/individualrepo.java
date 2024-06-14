@@ -1,5 +1,8 @@
 package com.example.eracertificate.IndividualCertificate;
 
-public interface individualrepo {
+import org.springframework.data.repository.CrudRepository;
+
+public interface individualrepo extends CrudRepository<individual,Integer>
+{
     
 }

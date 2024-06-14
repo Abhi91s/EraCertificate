@@ -1,5 +1,8 @@
 package com.example.eracertificate.FullstackCertificates;
 
-public interface fullstackrepo {
+import org.springframework.data.repository.CrudRepository;
+
+public interface fullstackrepo extends CrudRepository<fullstack,Integer>
+{
     
 }

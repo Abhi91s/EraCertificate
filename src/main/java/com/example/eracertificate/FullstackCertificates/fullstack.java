@@ -1,16 +1,31 @@
 package com.example.eracertificate.FullstackCertificates;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class fullstack 
 {
-    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
+
     private String name;
     private String course;
     private String strating_date;
     private String ending_date;
     private String date_of_issue;
    private boolean certificate_status;
-
-
+   
+   
+   public int getId() {
+       return id;
+   }
+   public void setId(int id) {
+       this.id = id;
+   }
 public String getName() {
     return name;
 }

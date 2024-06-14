@@ -100,41 +100,122 @@
                 </div>
             </div>
         </section>
+
         <section id="users">
-            <h1>Student Detail..</h1>
+
+            <!-- Individual Cource Form data -->
+            <h1>Individual Course Students...</h1>
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
-                            <th>Id</th>
                             <th>Name</th>
-                            <th>Phone Number</th>
+                            <th>Course</th>
+                            <th>Start Date</th>
+                            <th>Ending Date</th>
+                            <th>Date Of Issue</th>
                             <th>Actions</th>
+                            <th>Certificate Status</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Sarthak</td>
-                            <td>1234567890</td>
+                        <tr th:each= "obj:${Indi_list}"> 
+
+                            <td th:text="${obj.name}"></td>
+                            <td th:text="${obj.course}"></td>    
+                            <td th:text="${obj.strating_date}"></td>
+                            <td th:text="${obj.ending_date}"></td>
+                            <td th:text="${obj.date_of_issue}"></td>
                             <td>
                                 <a href="/view">
                                     <button>View</button>
                                 </a>
-                                <a href="/download">
-                                    <button>Download</button>
+                            </td>
+                            <td style="color: rgb(13, 225, 13); font-weight: bolder;" th:text="${obj.certificate_status}"></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Full-Stack Cource Form data -->
+            <h1>Full-Stack Course Students...</h1>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Start Date</th>
+                            <th>Ending Date</th>
+                            <th>Date Of Issue</th>
+                            <th>Actions</th>
+                            <th>Certificate Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each= "obj:${Full_list}"> 
+
+                            <td th:text="${obj.name}"></td>
+                            <td th:text="${obj.course}"></td>    
+                            <td th:text="${obj.strating_date}"></td>
+                            <td th:text="${obj.ending_date}"></td>
+                            <td th:text="${obj.date_of_issue}"></td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
                                 </a>
                             </td>
+                            <td style="color: rgb(13, 225, 13); font-weight: bolder;" th:text="${obj.certificate_status}"></td>
 
                         </tr>
 
                     </tbody>
                 </table>
             </div>
+
+
+            <!-- Basic com. Cource Form data -->
+            <h1>Basic Com. Course Students...</h1>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Start Date</th>
+                            <th>Ending Date</th>
+                            <th>Date Of Issue</th>
+                            <th>Actions</th>
+                            <th>Certificate Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each= "obj:${Basic_list}"> 
+
+                            <td th:text="${obj.name}"></td>
+                            <td th:text="${obj.course}"></td>    
+                            <td th:text="${obj.strating_date}"></td>
+                            <td th:text="${obj.ending_date}"></td>
+                            <td th:text="${obj.date_of_issue}"></td>
+                            <td>
+                                <a href="/view">
+                                    <button>View</button>
+                                </a>
+                            </td>
+                            <td style="color: rgb(13, 225, 13); font-weight: bolder;" th:text="${obj.certificate_status}"></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
         </section>
     </main>
+    
     <section id="forms">
-        <a href="">
+        <a href="/">
             <i id="closeForm" class="ri-close-large-line"></i>
         </a>
         <div id="individual-course-form" class="form-wrapper">
@@ -235,6 +316,7 @@
             </form>
         </div>
     </section>
+
     <script src="/JS/script.js"></script>
 </body>
 

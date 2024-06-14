@@ -1,10 +1,19 @@
 package com.example.eracertificate.BasicCertificates;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
+@Entity
 public class basic
 {
-    //b stand for basic cource
+    
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
+     
     private String name;
     private String course;
     private String strating_date;
@@ -12,10 +21,16 @@ public class basic
     private String date_of_issue;
    private boolean certificate_status;
    
+   public int getId() {
+       return id;
+   }
+   public void setId(int id) {
+       this.id = id;
+   }
 public String getName() {
     return name;
-}
-public void setName(String name) {
+    }
+    public void setName(String name) {
     this.name = name;
 }
 public String getCourse() {
