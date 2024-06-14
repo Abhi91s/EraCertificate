@@ -56,10 +56,15 @@ computer_basic_button.addEventListener("click", () => {
     showForm(computer_basic_form);
 });
 
-closeForm.addEventListener("click", () => {
+function hideForm() {
     forms.classList.remove("active");
     [individual_course_form, full_stack_form, computer_basic_form].forEach(form => {
         form.classList.remove("active");
     });
     console.log("closed");
-})
+}
+
+closeForm.addEventListener("click", hideForm())
+document.querySelector("#close-form-space").addEventListener("click", function () {
+    hideForm()
+}) 
