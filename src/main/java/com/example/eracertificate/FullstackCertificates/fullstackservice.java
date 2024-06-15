@@ -7,6 +7,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.eracertificate.BasicCertificates.basic;
+
 
 
 
@@ -30,6 +32,21 @@ public class fullstackservice
         reposertry.save(full);
       }
 
+//-------------------------------------------------
+
+public fullstack getStdByID(int id)
+{
+  List<fullstack> list=getAllStudent();
+
+  for (fullstack full : list) 
+  {
+    if (full.getId()==id) 
+    {
+      return full;  
+    }
+  }
+   return null;
+}
 //-------------------------------------------------
 
     public boolean chackStdExist(fullstack bs)

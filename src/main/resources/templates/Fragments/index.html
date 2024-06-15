@@ -127,7 +127,7 @@
                             <td th:text="${obj.ending_date}"></td>
                             <td th:text="${obj.date_of_issue}"></td>
                             <td>
-                                <a href="/view">
+                                <a th:href= "@{/viwe-Indi-cer/{id}  (id=${obj.id})}">
                                     <button>View</button>
                                 </a>
                             </td>
@@ -162,7 +162,7 @@
                             <td th:text="${obj.ending_date}"></td>
                             <td th:text="${obj.date_of_issue}"></td>
                             <td>
-                                <a href="/view">
+                                <a th:href= "@{/viwe-full-cer/{id}  (id=${obj.id})}">
                                     <button>View</button>
                                 </a>
                             </td>
@@ -199,7 +199,7 @@
                             <td th:text="${obj.ending_date}"></td>
                             <td th:text="${obj.date_of_issue}"></td>
                             <td>
-                                <a href="/view">
+                                <a th:href= "@{/viwe-basic-cer/{id}  (id=${obj.id})}">
                                     <button>View</button>
                                 </a>
                             </td>

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 
 
+
 @Service
 public class individualservice 
 {
@@ -32,6 +33,21 @@ public class individualservice
         System.out.println("\n\nSaved....");
   }
 
+//-------------------------------------------------
+
+public individual getStdByID(int id)
+{
+  List<individual> list=getAllStudent();
+
+  for (individual indi : list) 
+  {
+    if (indi.getId()==id) 
+    {
+      return indi;  
+    }
+  }
+   return null;
+}
 //----------------------------------------------
 
   public boolean chackStdExist(individual bs)

@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,13 +24,29 @@ public class basicservice
 
 //----------------------------------------------
 
-    public void saveStd(basic bs)
+public void saveStd(basic bs)
+{
+  reposerty.save(bs);
+
+  System.out.println("\n\nBSaved...");
+  }
+  
+//------------------------------------------------
+
+public basic getStdByID(int id)
+{
+  List<basic> list=getAllStudent();
+
+  for (basic basic : list) 
+  {
+    if (basic.getId()==id) 
     {
-        reposerty.save(bs);
-        System.out.println("\n\nBSaved...");
+      return basic;  
     }
-
-
+  }
+   return null;
+}
+  
 //------------------------------------------------
 
     public boolean chackStdExist(basic bs)
