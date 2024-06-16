@@ -5,23 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate</title>
-    <link rel="stylesheet" th:href="@{/CSS/certificate.css}">
-    <link rel="stylesheet" th:href="@{/FragmentsCSS/Fragments.css}">
+    <link rel="stylesheet" href="./certificate.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <main>
         <div class="certificate-wrapper">
             <figure>
-                <img th:src="@{/Images/certificate-bg.jpg}" alt="Certificate Image">
+                <img src="./certificate-bg.jpg" alt="Certificate Image">
                 <article>
-                    <h1 th:text="${obj.course}"></h1>
-                    <p>Completed By <b th:text="${obj.name}"></b> From <b th:text="${obj.strating_date}"></b> to <b th:text="${obj.ending_date}"></b> With Good
-                       Proficiency Achievement.</p>
+                    <h1>C & C++ Language</h1>
+                    <p>Completed By <b>Sarthak Parulekar</b> From <b>24/04/2024</b> to <b>30/05/2024</b> With Good
+                        Proficiency Achievement.</p>
                     <p>Congratulations On a Job Well Done!</p>
                     <footer>
-                        <p>Date of Issue</p>
-                        <p>Authorized Signatory</p>
+                        <div class="date-of-issue">
+                            <b>01-04-2024</b>
+                            <p class="text">Date of Issue</p>
+                        </div>
+                        <div class="signature">
+                            <img src="" alt="Signature">
+                            <p>Authorized Signatory</p>
+                        </div>
                     </footer>
                 </article>
             </figure>

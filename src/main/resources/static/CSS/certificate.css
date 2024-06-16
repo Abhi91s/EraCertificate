@@ -75,6 +75,21 @@ main {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+
+                .date-of-issue {
+                    display: flex;
+                    flex-direction: column;
+
+                    .text {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .signature {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
         }
     }
