@@ -18,11 +18,12 @@
         <nav>
             <ul type="none">
                 <section>
-                    <h1>Main</h1>
-                    <li>
+                      <h1>Main</h1>
+        <a href="/"><li>
                         <span>Home</span>
                         <span>Home</span>
-                    </li>
+                    </li></a>
+                    
                     <li>
                         <span>About</span>
                         <span>About</span>
@@ -131,8 +132,8 @@
                                     <button>View</button>
                                 </a>
                             </td>
-                            <td style="color: rgb(13, 225, 13); font-weight: bolder;" th:text="${obj.certificate_status}"></td>
-
+                            <td style="color:#fff; font-weight: bold;" th:if="${obj.certificate_status}">Download/Verified</td>
+                            <td style="color:#fff; font-weight: bold;" th:unless="${obj.certificate_status}">Not Downloaded</td>
                         </tr>
                     </tbody>
                 </table>
@@ -166,7 +167,8 @@
                                     <button>View</button>
                                 </a>
                             </td>
-                            <td style="color: rgb(13, 225, 13); font-weight: bolder;" th:text="${obj.certificate_status}"></td>
+                            <td style="color:#fff; font-weight: bold;" th:if="${obj.certificate_status}">Download/Verified</td>
+                            <td style="color:#fff; font-weight: bold;" th:unless="${obj.certificate_status}">Not Downloaded</td>
 
                         </tr>
 
@@ -203,8 +205,8 @@
                                     <button>View</button>
                                 </a>
                             </td>
-                            <td style="color: rgb(13, 225, 13); font-weight: bolder;" th:text="${obj.certificate_status}"></td>
-
+                            <td style="color:#fff; font-weight: bold;" th:if="${obj.certificate_status}">Download/Verified</td>
+                            <td style="color:#fff; font-weight: bold;" th:unless="${obj.certificate_status}">Not Downloaded</td>
                         </tr>
 
                     </tbody>
@@ -215,7 +217,7 @@
     </main>
     
     <section id="forms">
-        <a href="">
+        <a href="/">
             <i id="closeForm" class="ri-close-large-line"></i>
         </a>
         <div id="individual-course-form" class="form-wrapper">

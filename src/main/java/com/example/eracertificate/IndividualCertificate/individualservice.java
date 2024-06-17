@@ -30,7 +30,7 @@ public class individualservice
   {
          reposetry.save(indi);
          
-        System.out.println("\n\nSaved....");
+        System.out.println("\n\nISaved....");
   }
 
 //-------------------------------------------------

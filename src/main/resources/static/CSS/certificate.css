@@ -100,5 +100,8 @@ main {
         .download {
             display: none;
         }
+
+        margin-top: -3rem;
+        font-size:large;
     }
 }

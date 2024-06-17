@@ -89,12 +89,14 @@ body {
                 span {
                     font-family: math !important;
                     transition: all ease 0.2s;
+                    text-decoration: none;
                     /* background: red; */
                 }
 
                 &:hover {
                     span {
                         transform: translateY(-1.7rem);
+                       
                     }
                 }
             }
