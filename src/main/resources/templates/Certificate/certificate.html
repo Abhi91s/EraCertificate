@@ -34,8 +34,9 @@
             </figure>
         </div>
 
-        <div th:if="${obj.certificate_status}">
+        <div id="download-div" th:if="${obj.certificate_status}">
             <button class="download" onclick=window.print()>Download</button>
+            <a th:href="@{/}">Back To Home</a>
         </div>
 
         <div th:unless="${obj.certificate_status}">
